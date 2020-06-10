@@ -1,0 +1,8 @@
+Add Names to the logos and images, e.g. House On The Rock Ilorin Logo
+  text-indent: -9999999px;
+allow "  background-color: #000;" in case of slow internet connection
+
+Get an image previewer plugin for Visual Studio Code
+
+Chapter 2 - Value Creation
+Me "164"
