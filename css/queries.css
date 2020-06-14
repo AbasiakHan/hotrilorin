@@ -90,8 +90,11 @@
   .logo-center {
     display: grid;
     justify-content: center;
+  }
 
-    /* z-index: 70; */
+  .logo-center img {
+    width: 60%;
+    height: auto;
   }
 
   /* SOCIAL MEDIA ICONS */

@@ -25,6 +25,11 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* REUSABLE */
 .row {
   max-width: 75%;
@@ -280,6 +285,7 @@ main {
   text-align: center;
   z-index: 1;
   padding: 20px 0 24px 0;
+  height: 15vh;
 }
 
 main .please {
@@ -289,7 +295,7 @@ main .please {
   text-align: right;
   margin-right: 30px;
   vertical-align: middle;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 2px;
   font-size: 1.2em;
 }
@@ -303,7 +309,7 @@ main .dire {
 .dire span {
   letter-spacing: 1px;
   font-weight: 400;
-  border: 1px solid;
+  border: 3px solid;
   font-size: 1.2em;
   padding: 10px 15px;
   text-transform: uppercase;
@@ -315,9 +321,16 @@ main .dire {
   background: #c3ee4d;
 }
 
+.direct-text {
+  height: ;
+}
+
+
+
 .direct span {
   color: #000000;
 }
+
 
 /* FOOTER */
 .footer-container {
@@ -383,15 +396,16 @@ main .dire {
 .social-icons li {
   display: inline-block;
   margin-right: 10px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .social-icons li a i:hover {
   display: inline-block;
-  margin-right: 10px;
-  font-size: 1.5rem;
+  /* margin-right: 10px; */
+  /* font-size: 1.5rem; */
   color: rgb(214, 216, 120);
-  /* transition: ease-in-out .5s; */
+  transition-delay: 0.3s;
+  transition: ease-in-out .5s;
 }
 
 .social-icons {
