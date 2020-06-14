@@ -100,16 +100,18 @@
   /* SOCIAL MEDIA ICONS */
   .social-icons li {
     display: inline-block;
-    margin: 0 20px;
-    font-size: 3em;
+    /* margin: 0 %; */
+    /* font-size: 3em; */
   }
-  .social-icons li a i:hover {
-    display: inline-block;
-    margin: 0 20px;
-    font-size: 3rem;
-    color: rgb(214, 216, 120);
-    /* transition: ease-in-out 0.5s; */
+
+  .fb,
+  .tw,
+  .ig,
+  .wa {
+    font-size: 90%;
+    padding: 70%;
   }
+
   .hero {
     /* main-nav {display: none; } */
 
