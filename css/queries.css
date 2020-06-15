@@ -99,6 +99,7 @@
 
   /* SOCIAL MEDIA ICONS */
   .social-icons {
+    margin: 0;
     display: flex;
     justify-content: space-between;
   }
@@ -123,7 +124,7 @@
   }
 
   header {
-    background: url("../img/banner-min.png") no-repeat center center/cover;
+    background: url("../img/banner-min-min.png") no-repeat center center/cover;
   }
 
   .hero__title img {
@@ -133,23 +134,34 @@
   /*	FOOTER */
   .footer-cols {
     grid-template-columns: 2fr;
-    font-size: 25px;
+    font-size: 1em;
     letter-spacing: 2px;
     line-height: 1.8;
   }
 
   .footer-copyright > .row {
     display: block;
-    margin: 0;
-    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 90%;
+  }
+
+  .footer-copy {
+    display: block;
+    /* align-self: end; */
+    /* max-width: 100%; */
   }
 
   .footer-copy-copy {
-    align-self: end;
+    display: inline-block;
+        max-width: 70%;
+        float: left;
   }
 
-  .footer-copy img {
-    display: block;
+  .logo-copy {
+   width: 25%;
+    display: inline-block;
+    float: right;
   }
 }
 

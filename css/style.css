@@ -321,16 +321,13 @@ main .dire {
   background: #c3ee4d;
 }
 
-.direct-text {
+/* .direct-text {
   height: ;
-}
-
-
+} */
 
 .direct span {
   color: #000000;
 }
-
 
 /* FOOTER */
 .footer-container {
@@ -348,7 +345,7 @@ main .dire {
 }
 
 .footer-copyright {
-    position: relative;
+  position: relative;
   color: #b2b2b2;
   display: block;
   z-index: 3;
@@ -381,16 +378,22 @@ main .dire {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  align-items: baseline;
 }
 
-.footer-copy img {
-  width: 15em;
-  float: right;
+.footer-copy-copy {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.footer-copy .logo-copy {
+  display: block;
+  /* width: 64px; */
+  background: url(/img/homeforall_black-min.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  justify-items: right;
 }
 
 .social-icons li {
@@ -405,7 +408,7 @@ main .dire {
   /* font-size: 1.5rem; */
   color: rgb(214, 216, 120);
   transition-delay: 0.3s;
-  transition: ease-in-out .5s;
+  transition: ease-in-out 0.5s;
 }
 
 .social-icons {
