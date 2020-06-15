@@ -148,8 +148,6 @@
 
   .footer-copy {
     display: block;
-    /* align-self: end; */
-    /* max-width: 100%; */
   }
 
   .footer-copy-copy {
@@ -158,10 +156,8 @@
         float: left;
   }
 
-  .logo-copy {
-   width: 25%;
-    display: inline-block;
-    float: right;
+  .footer-copy .logo-copy {
+display: none;
   }
 }
 
