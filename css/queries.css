@@ -27,12 +27,14 @@
 
   a.mobile-nav-icon {
     display: block;
-    margin: -60px 50px 0 0;
-    top: 0;
+    /* margin: -50px 50px 0 0; */
+    /* top: 0; */
   }
 
   .mobile-nav-icon {
-    margin-top: 0px;
+    display: inline-block;
+    /* margin-top: 30px; */
+    float: right;
   }
 
   .main-nav {
@@ -40,8 +42,10 @@
     justify-items: center;
     margin: 80px 0 0 0;
     border: 1px solid yellow;
+    background: rgb(0, 0, 0);
     font-weight: 400;
     /* padding: 20px 0; */
+    z-index: -2;
   }
 
   ul.main-nav {
@@ -51,14 +55,14 @@
   }
 
   .main-nav li {
+    position: relative;
     letter-spacing: 7px;
     display: block;
     margin: 0;
     text-align: center;
     width: 80vw;
-    line-height: 30px;
-    font-size: 25px;
-    /* z-index: ; */
+    line-height: 15px;
+    font-size: 15px;
     opacity: 1;
   }
 
@@ -67,8 +71,6 @@
     left: 0;
     position: absolute;
     width: 100%;
-    height: 34vh;
-    background: rgba(0, 0, 0, 0.4);
     z-index: -1;
   }
 
@@ -87,6 +89,10 @@
   }
 
   /* set logo opacity whenmenu is clicked */
+.logos {
+  display: inline-block;
+}
+
   .logo-center {
     display: grid;
     justify-content: center;
@@ -116,7 +122,7 @@
   .social-icons {
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .social-icons .desk-wa {
@@ -144,10 +150,18 @@
   }
 
   /* setman */
+  .setman-text {
+    padding: 0px;
+  }
+
   .setman-typer {
     clear: left;
     padding-left: 0em;
     margin: 0;
+  }
+
+  p.typer {
+    padding: 0;
   }
 
   .setman-main {
@@ -169,10 +183,10 @@
     color: blue;
     font-size: 15px;
     text-transform: uppercase;
-    justify-items: end;
-    /* display: grid; */
+    justify-content: flex-end;
+    display: flex;
     clear: left;
-    float: right;
+    /* float: right; */
     /* padding-left: 100px; */
   }
 
@@ -198,7 +212,7 @@
   .footer-cols {
     grid-template-columns: 2fr;
     font-size: 0.75em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.2;
   }
 
