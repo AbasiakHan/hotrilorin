@@ -269,8 +269,6 @@ p.typer{
 }
 
 .setman-text {
-  /* text-align: left; */
-  /* float: left; */
   padding: 10px;
 }
 
@@ -363,7 +361,7 @@ main {
   position: relative;
   background: var(--directions-color);
   text-align: center;
-  z-index: 5;
+  z-index: 1;
   padding: 20px 0 24px 0;
   /* height: 15vh; */
 }
@@ -417,7 +415,7 @@ main .direct-button {
   position: relative;
   color: #b2b2b2;
   display: block;
-  z-index: 2;
+  /* z-index: ; */
   background: var(--footer-color);
   max-width: 100%;
   padding-top: 1rem;
@@ -481,13 +479,12 @@ main .direct-button {
 
 .social-icons li {
   display: inline-block;
-  margin-right: 10px;
-  font-size: 2rem;
+  margin-right: 25px;
+  font-size: 1.5rem;
 }
 
 .social-icons li a i {
   color: var(--other-color);
-
 }
 
 .social-icons li a i:hover {
