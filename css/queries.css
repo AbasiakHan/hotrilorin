@@ -19,7 +19,7 @@
 /* Small phones to small tablets: from 500px to 767px */
 @media only screen and (max-width: 767px) {
   .row {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   a.mobile-nav-icon {
@@ -29,7 +29,6 @@
   }
 
   .mobile-nav-icon {
-    /* display: none; */
     margin-top: 0px;
   }
 
@@ -104,18 +103,15 @@
     justify-content: space-between;
   }
 
-  /*
-  .fb,
-  .tw,
-  .ig,
-  .wa {
-    font-size: 90%;
-    padding: 70%;
-  }*/
+  .social-icons .desk-wa {
+    display: none;
+  }
+
+  .social-icons .mobile-wa {
+    display: block;
+  }
 
   .hero {
-    /* main-nav {display: none; } */
-
     perspective: 600px;
     position: relative;
     margin: -80vh 0 0 0;
@@ -143,7 +139,7 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .footer-copy {
@@ -151,15 +147,78 @@
   }
 
   .footer-copy-copy {
-    display: inline-block;
-        max-width: 70%;
-        float: left;
+    /* display: inline-block; */
+    max-width: 70%;
+    float: left;
   }
 
   .footer-copy .logo-copy {
-display: none;
+    display: none;
+  }
+
+  .review {
+    max-width: none;
+    width: calc(100% - 20px);
+  }
+
+  /* set man */
+  .setman-typer {
+  clear: left;
+  padding-left: 0em;
+  margin: 0;
+}
+
+.setman-main {
+  float: left;
+  margin: 0;
+  padding-left: 0em;
+  line-height: 1.5;
+  font-style: normal;
+  font-size: 17px;
+  width: 60%;
+}
+
+  /* main */
+  main .direct-text {
+    display: block;
+    /* overflow: hidden; */
+    padding: 0;
+    /* justify-content: space-between; */
+  }
+
+  main .please {
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-bottom: 10px; */
+    padding-bottom: 0px
+    white-space: nowrap;
+  }
+
+  main .direct-button {
+    display: grid;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+  }
+
+  .direct-button span {
+    display: grid;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    width: 300px;
+    font-size: 1.2em;
+    padding: 20px 0;
+    text-transform: uppercase;
+    background: #88cc34;
+
   }
 }
+/* 767px end */
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 501px) {
@@ -172,18 +231,6 @@ display: none;
   }
 
   /* main start */
-
-  main .please {
-    font-weight: 400;
-    display: inline-block;
-    width: 200px;
-    text-align: right;
-    margin-right: 10px;
-    vertical-align: middle;
-    /* text-transform: uppercase; */
-    letter-spacing: 2px;
-    font-size: 0.9em;
-  }
 
   main .dire {
     display: inline-block;

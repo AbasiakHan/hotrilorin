@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/css/ionicons.min.css" />
     <link
       rel="stylesheet"
-      type="text/css"
       href="tooltipster/dist/css/tooltipster.bundle.min.css"
     />
     <link
@@ -35,15 +34,8 @@
           <ul class="logos">
             <li>
               <a href="#"
-                ><img
-                  src="/img/homeforall_white-min.png"
-                  alt="HOTR logo"
-                  class="logo"
-                /><img
-                  src="/img/homeforall_black-min.png"
-                  alt="HOTR logo"
-                  class="logo-black"
-                />
+                ><div class="logo-white"></div>
+                <div class="logo-black"></div>
               </a>
             </li>
           </ul>
@@ -73,40 +65,110 @@
       </div>
     </header>
 
-    <!-- <section class="setman-container js--setman-container">
-		<div class="fabric">
-				<img src="/img/fabric-long-shadow.png" alt="">
-		</div>
-		<div class="setman">
-			
-			<div class="setman-text">
-				<div  class="setman-head-container">
-					<div class="firstline">
-							We are a chosen people, a royal priesthood.
-					</div>
-					<div class="secondline">
-							We love Jesus.
-					</div>
-				</div>
-				<div class="setman-main">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat accusamus sed quis similique quo quia consequuntur perferendis recusandae, similique quo quia consequuntur perferendis recusandae. similique quo quia consequuntur perferendis recusandae  dignissimos consequatur!
-					</p>
-				</div>
-			</div>
-			
-			<div class="headshot" >
-				<img src="/img/fis.png" alt="" class=" tooltip" title="Ogunshola Oluwafisayo, Ph.D">
-			</div>
-		
-		</div>
-	</section> -->
+    <!-- Fabric and setman section start -->
+    <section class="setman-container js--setman-container">
+      <div class="fabric"></div>
+      <div class="setman" id="set-id">
+        <div class="setman-text">
+          <div class="setman-typer">
+            <h2>
+              We
+              <span
+                class="typer"
+                id="main"
+                data-words="are a chosen people,are a royal priesthood,love Jesus,love you"
+                data-delay="100"
+                data-deleteDelay="1000"
+              ></span>
+              <span class="cursor" data-owner="main"></span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="setman-main set-height">
+          <h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+            accusamus sed quis similique quo quia consequuntur perferendis
+            recusandae, similique quo quia consequuntur perferendis recusandae.
+            similique quo quia consequuntur perferendis recusandae dignissimos
+            consequatur!
+          </h3>
+        </div>
+        <div class="headshot">
+          <img
+            src="/img/fis.png"
+            alt=""
+            class="tooltip"
+            title="Ogunshola Oluwafisayo, Ph.D"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews section -->
+    <div class="reviews" id="reviews">
+      <div class="review">
+        <div
+          class="picture shadow"
+          style="
+            background-image: url('/img/69.jpg');
+            background-size: 100%;
+          "
+        ></div>
+        <h3>Damilola Gbabs</h3>
+        <p>
+          "God is in this place!"
+        </p>
+      </div>
+      <div class="review">
+        <div
+          class="picture shadow"
+          style="
+            background-image: url('/img/55.jpg');
+            background-size: auto 100%;
+          "
+        ></div>
+        <h3>Bukola Ifelodun</h3>
+        <p>
+          "I felt so welcomed, whenever I am in town I want to worship here."
+        </p>
+      </div>
+      <br />
+      <div class="review">
+        <div
+          class="picture shadow"
+          style="
+            background-image: url('/img/59.jpg');
+            background-size: auto 100%;
+          "
+        ></div>
+        <h3>Pelumi Adedoyin</h3>
+        <p>
+          "I feel so at home here."
+        </p>
+      </div>
+      <div class="review">
+        <div
+          class="picture shadow"
+          style="
+            background-image: url('/img/92.jpg');
+            background-size: auto 100%;
+          "
+        ></div>
+        <h3>Gabriel Jumoke</h3>
+        <p>
+          "I want all my friends to have a taste of this beautiful family."
+        </p>
+      </div>
+    </div>
+    <!-- reviews section end -->
 
     <main class="direct">
       <div class="direct-text">
         <div class="please">
           <span>Join us this Sunday</span>
         </div>
-        <div class="dire">
+        <div class="direct-button">
           <a
             class="popup-gmaps"
             href="https://maps.google.com/maps?q=2+James+Oni+Road,+Off+Old+Jebba+Road,+Agric+Ilorin&amp;hl=en&amp;t=v&amp;"
@@ -134,9 +196,27 @@
                 ><i class="ion-social-instagram-outline ig"></i
               ></a>
             </li>
-            <li>
-              <a href=""><i class="ion-social-whatsapp wa"></i></a>
+            <li class="mobile-wa">
+              <a href="https://wa.link/jzsero">
+                <i class="ion-social-whatsapp wa"></i
+              ></a>
             </li>
+            <li class="desk-wa">
+              <a class="popup-modal" href="#open-modal">
+                <i class="ion-social-whatsapp wa"></i
+              ></a>
+            </li>
+            <div class="html-code">
+              <div id="open-modal" class="white-popup-block mfp-hide">
+                <!-- <h1>Modal dialog</h1> -->
+                <img src="/img/wa.link_jzsero.png" alt="" />
+                <p>
+                  Scan this code from your WhatsApp camera to add us as a
+                  contact.
+                </p>
+                <p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+              </div>
+            </div>
           </ul>
 
           <ul class="store">
@@ -179,18 +259,23 @@
       <div class="row">
         <div class="footer-copy">
           <div class="footer-copy-copy">
-            Copyright &copy;2020. House On The Rock. All rights reserved.
+            Copyright &copy;2020. House On The Rock, Ilorin. All rights reserved.
           </div>
           <div class="logo-copy"></div>
         </div>
       </div>
     </div>
 
+    <!-- Typer.js -->
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
     <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <!-- Magnific Popup core JS file -->
     <script src="magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!--  -->
     <script src="js/jquery.waypoints.min.js"></script>
     <!--	Tooltipster js -->
     <script

@@ -2,7 +2,7 @@
   --primary-color: #fff;
   --secondary-color: #121912;
   --footer-color: #333333;
-  --directions-color: #8dc645;
+  --directions-color: #85bf3b;
   --setman-color: #ffff66;
 }
 
@@ -53,18 +53,34 @@ header {
 }
 
 /* NAVIGATION */
-.logo {
-  height: 2.5em;
-  width: auto;
+.logo-white {
+  display: block;
+  background: url("/img/homeforall_white-min.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 200px;
   float: left;
 }
 
 .logo-black {
+  background: url("/img/homeforall_black-min.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  height: 40px;
+  width: 200px;
+  float: left;
+  /* width: auto; */
+  /* float: left; */
+}
+
+/* .logo-black {
   display: none;
   height: 1.6em;
   width: auto;
   float: left;
-}
+} */
 
 .nav {
   max-width: 100%;
@@ -140,7 +156,7 @@ ul {
   transition-duration: 500ms;
 }
 
-.sticky .logo {
+.sticky .logo-white {
   display: none;
 }
 
@@ -193,140 +209,205 @@ ul {
 
 /* SETMAN */
 .setman-container {
-  z-index: 1;
+  z-index: 0;
   position: relative;
   background: var(--setman-color);
-  height: 30rem;
   max-width: 100%;
   margin: auto;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 1em;
+  /* padding-left: 4em; */
+  padding-bottom: 1em;
+  overflow: auto;
+}
+
+.setman-typer {
+  clear: left;
+  padding-left: 5em;
+}
+
+.setman-typer > h3 {
+  color: blue;
 }
 
 .setman {
-  position: relative;
-  padding: 1em;
-  display: grid;
-  grid-template-columns: 70% 30%;
-  max-width: 70%;
   margin: auto;
-  left: 100px;
+  max-width: 90%;
+  padding: 10px;
+  text-align: left;
 }
 
-.setman-text {
-  display: grid;
-  grid-template-rows: 40% 40%;
-  line-height: 2.3rem;
+.setman-main {
+  font-weight: 300;
+  float: left;
+  margin: 0;
+  padding-left: 7em;
+  line-height: 2;
+  font-style: oblique;
+  width: 60%;
 }
 
-.setman-head-container {
-  font-size: 1.8em;
-  font-weight: 400;
-}
-
-.firstline {
-  color: saddlebrown;
-  position: relative;
-  width: 760px;
-  height: 3rem;
-  text-align: center;
-  background: #fdd617;
-  padding: 1px;
-}
-
-.secondline {
-  position: relative;
-  width: 260px;
-  background: blue;
-  top: -10px;
-  left: 50px;
-  text-align: center;
-}
-
-/* .setman-head {
-		text-align: ;
-} */
-
-.secondline li {
-  background: blue;
-}
-
-.setman-text .setman-main {
-  font-size: 1.1em;
-  max-width: 80%;
-  padding-left: 40px;
+#set-id::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .fabric {
-  z-index: 0;
+  z-index: -1;
   position: fixed;
   top: -30px;
-  left: 2em;
-  opacity: 0.3;
+  opacity: 0.1;
+  background: url("/img/fabric-long-shadow.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 900px;
+  height: 100%;
+  width: 100%;
 }
 
-.fabric img {
-  width: 70%;
-  /*	object-fit: contain;*/
+.setman-text {
+  /* text-align: left; */
+  /* float: left; */
+  padding: 10px;
 }
 
-.headshot img {
+.headshot > img {
+  max-width: 30%;
+
+  /* padding-left: 1em; */
+  /* float: left; */
+}
+
+.headshot {
+  float: left;
+  margin: 0;
+  max-width: 40%;
+  min-width: 20%;
+  padding-top: 40px;
+}
+
+/* REVIEWS */
+.reviews {
   position: relative;
-  height: 10em;
-  top: 100px;
-  right: 50px;
+  font-size: 0;
+  padding: 20px;
+  background-color: rgb(243, 242, 242);
+  text-align: center;
+  border: 1px solid rgb(230, 230, 230);
+  border-width: 1px 0 1px 0;
 }
 
-/* .firstline {
-	
-} */
+.review {
+  text-align: left;
+  color: black;
+  padding: 10px;
+  display: inline-block;
+  width: calc(50% - 20px);
+  max-height: 120px;
+  overflow: hidden;
+  vertical-align: top;
+  max-width: 450px;
+}
+
+.review .picture {
+  width: 100px;
+  height: 100px;
+  float: left;
+  border-radius: 50px;
+  border: 1px solid rgb(49, 49, 52);
+  margin-right: 10px;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 7px 0px;
+}
+
+.review p {
+  color: rgb(60, 60, 60);
+  margin-top: 0;
+  font-size: initial;
+}
+
+.review > p {
+  font-style: oblique;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.review h3 {
+  margin-bottom: 0;
+  font-size: initial;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
 
 /* DIRECTIONS */
 main {
-  /* position: relative; */
+  position: relative;
   background: var(--directions-color);
   text-align: center;
-  z-index: 1;
+  z-index: 5;
   padding: 20px 0 24px 0;
-  height: 15vh;
+  /* height: 15vh; */
+}
+
+.direct-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 main .please {
   font-weight: 400;
   display: inline-block;
   width: 250px;
-  text-align: right;
-  margin-right: 30px;
-  vertical-align: middle;
+  /* text-align: right; */
+  /* margin-right: 30px; */
+  /* vertical-align: middle; */
   /* text-transform: uppercase; */
   letter-spacing: 2px;
   font-size: 1.2em;
 }
 
-main .dire {
+main .direct-button {
   display: inline-block;
   width: 250px;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
-.dire span {
+.direct-button span {
   letter-spacing: 1px;
   font-weight: 400;
-  border: 3px solid;
+  border: 1px solid #fff;
+  border-radius: 50px;
   font-size: 1.2em;
-  padding: 10px 15px;
+  padding: 10px 30px;
   text-transform: uppercase;
   background: #88cc34;
 }
 
-.dire span:hover {
+.direct-button span:hover {
   transition: ease-in 0.5s;
   background: #c3ee4d;
 }
-
-/* .direct-text {
-  height: ;
-} */
 
 .direct span {
   color: #000000;
@@ -337,7 +418,7 @@ main .dire {
   position: relative;
   color: #b2b2b2;
   display: block;
-  z-index: 3;
+  z-index: 2;
   background: var(--footer-color);
   max-width: 100%;
   padding-top: 1rem;
@@ -418,22 +499,9 @@ main .dire {
   margin: 0 auto;
 }
 
-/* .social-icons .fb,
-.social-icons .tw,
-.social-icons .wa,
-.social-icons .ig {
-  color: #b2b2b2;
+.social-icons .mobile-wa {
+  display: none;
 }
-
-.social-icons .fb:hover {
-  color: #3b5999;
-  transition-duration: 0.8s;
-}
-
-.social-icons .tw:hover {
-  color: #55acee;
-  transition-duration: 0.8s;
-} */
 
 .footer-cols .social-icons a:link,
 .footer-cols .social-icons a:visited {

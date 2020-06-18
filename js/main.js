@@ -1,3 +1,4 @@
+// magnific popup gmaps
 $(document).ready(function () {
   //Google map
   $(".popup-gmaps").magnificPopup({
@@ -9,6 +10,26 @@ $(document).ready(function () {
 
     fixedContentPos: false,
   });
+
+  // magnific popup image
+  $(".image-link").magnificPopup({
+    type: "image",
+    // other options
+  });
+  // mfp end
+
+  // open modal
+  $('.popup-modal').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    focus: '#username',
+    modal: true
+  });
+  $(document).on('click', '.popup-modal-dismiss', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+  // open modal end
 
   $("h1").click(function () {
     $(this).css("background-color", "#ff0000");
