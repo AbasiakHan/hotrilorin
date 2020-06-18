@@ -60,8 +60,6 @@
     font-size: 25px;
     /* z-index: ; */
     opacity: 1;
-
-    /* margin-left: 100px; */
   }
 
   .main-nav-wrapper {
@@ -100,19 +98,19 @@
   }
 
   .logo-white {
-  height: 30px;
-  width: 150px;
-}
+    height: 30px;
+    width: 150px;
+  }
 
-.logo-black {
-  background: url("/img/homeforall_black-min.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: none;
-  height: 30px;
-  width: 150px;
-  float: left;
-}
+  .logo-black {
+    background: url("/img/homeforall_black-min.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+    height: 30px;
+    width: 150px;
+    float: left;
+  }
 
   /* SOCIAL MEDIA ICONS */
   .social-icons {
@@ -143,6 +141,57 @@
 
   .hero__title img {
     height: 200px;
+  }
+
+  /* setman */
+  .setman-typer {
+    clear: left;
+    padding-left: 0em;
+    margin: 0;
+  }
+
+  .setman-main {
+    float: left;
+    margin: 0;
+    padding-left: 0em;
+    line-height: 1.5;
+    font-style: normal;
+    font-size: 17px;
+    width: 100%;
+  }
+
+  .fabric {
+    display: none;
+  }
+
+  .setman-footer {
+    font-weight: 400;
+    color: blue;
+    font-size: 15px;
+    text-transform: uppercase;
+    justify-items: end;
+    /* display: grid; */
+    clear: left;
+    float: right;
+    /* padding-left: 100px; */
+  }
+
+  .setman-footer p {
+    float: left;
+  }
+
+  .headshot > img {
+    max-width: 30%;
+  }
+
+  .headshot {
+    margin: 0;
+    /* max-width: 30%; */
+    min-width: 20%;
+    height: 50%;
+    padding-left: 10px;
+    padding-top: 0;
+    float: left;
   }
 
   /*	FOOTER */
@@ -177,23 +226,6 @@
   .review {
     max-width: none;
     width: calc(100% - 20px);
-  }
-
-  /* set man */
-  .setman-typer {
-    clear: left;
-    padding-left: 0em;
-    margin: 0;
-  }
-
-  .setman-main {
-    float: left;
-    margin: 0;
-    padding-left: 0em;
-    line-height: 1.5;
-    font-style: normal;
-    font-size: 17px;
-    width: 60%;
   }
 
   /* main */
@@ -249,7 +281,6 @@
   }
 
   /* main start */
-
   main .dire {
     display: inline-block;
     width: 180px;

@@ -224,6 +224,10 @@ ul {
   padding-left: 5em;
 }
 
+p.typer{
+  font-size: 18px;
+}
+
 .setman-typer > h3 {
   color: blue;
 }
@@ -272,13 +276,9 @@ ul {
 
 .headshot > img {
   max-width: 30%;
-
-  /* padding-left: 1em; */
-  /* float: left; */
 }
 
 .headshot {
-  float: left;
   margin: 0;
   max-width: 40%;
   min-width: 20%;
@@ -466,7 +466,7 @@ main .direct-button {
 .footer-copy-copy {
   font-size: 0.7em;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
 
 .footer-copy .logo-copy {
