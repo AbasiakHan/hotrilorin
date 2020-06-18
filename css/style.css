@@ -4,6 +4,7 @@
   --footer-color: #333333;
   --directions-color: #85bf3b;
   --setman-color: #ffff66;
+  --other-color: #aaaaaa;
 }
 
 * {
@@ -71,8 +72,6 @@ header {
   height: 40px;
   width: 200px;
   float: left;
-  /* width: auto; */
-  /* float: left; */
 }
 
 /* .logo-black {
@@ -242,7 +241,7 @@ ul {
   margin: 0;
   padding-left: 7em;
   line-height: 2;
-  font-style: oblique;
+  /* font-style: oblique; */
   width: 60%;
 }
 
@@ -451,11 +450,11 @@ main .direct-button {
 }
 
 .footer-cols-head {
-  color: #fff;
+  color: rgb(243, 243, 243);
 }
 
 .footer-cols li {
-  line-height: 1.5rem;
+  line-height: 1.2rem;
 }
 
 .footer-copy {
@@ -484,6 +483,11 @@ main .direct-button {
   display: inline-block;
   margin-right: 10px;
   font-size: 2rem;
+}
+
+.social-icons li a i {
+  color: var(--other-color);
+
 }
 
 .social-icons li a i:hover {
@@ -521,7 +525,7 @@ main .direct-button {
 
 .store a,
 .gmap {
-  color: #000;
+  color: var(--other-color);
 }
 
 .store a:hover,
