@@ -77,6 +77,7 @@
 
   .main-nav ul {
     display: none;
+    position: absolute;
   }
 
   .main-nav li {
@@ -129,7 +130,6 @@
     /*	padding: 50px*/
   }
 
-  /* TODO: */
   header {
     background: url("../img/banner-min-min.png") no-repeat center center/cover;
   }
@@ -278,7 +278,7 @@
   .hero {
     perspective: 600px;
     position: relative;
-    margin: -80vh 0 0 0;
+    /* margin: -80vh 0 0 0; */
     transform: translateY(80vh);
     /*	padding: 50px*/
   }
