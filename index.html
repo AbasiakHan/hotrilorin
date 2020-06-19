@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="/css/ionicons.min.css" />
     <link
       rel="stylesheet"
+      href="dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="tooltipster/dist/css/tooltipster.bundle.min.css"
     />
     <link
@@ -30,6 +34,28 @@
     <!--	Header -->
     <header class="showcase">
       <nav>
+        <!-- mobile nav -->
+        <div class="mobile-row">
+          <div class="main-nav">
+            <ul class="js--main-nav">
+              <li><a href="">info</a></li>
+              <li><a href="">events</a></li>
+              <li><a href="">store</a></li>
+              <li><a href="">give</a></li>
+            </ul>
+          </div>
+          <div class="logo">
+            <a href="#"
+              ><div class="logo-white"></div>
+              <div class="logo-black"></div>
+            </a>
+          </div>
+          <div class="mobile-nav-icon js--nav-icon">
+            <a><i class="ion-navicon-round"></i></a>
+          </div>
+        </div>
+        <!-- mobile nav end -->
+
         <div class="row logo-center">
           <ul class="logos">
             <li>
@@ -40,11 +66,10 @@
             </li>
           </ul>
           <!-- mobile-nav-icon-before -->
-          <a class="mobile-nav-icon js--nav-icon"
+          <!-- <a class="mobile-nav-icon js--nav-icon"
             ><i class="ion-navicon-round"></i
-          ></a>
+          ></a> -->
           <div class="main-nav-wrapper js--main-nav-wrapper">
-            <!-- <div class="main-nav-wrapper-back"></div> -->
             <ul class="main-nav">
               <li><a href="">Info Centre</a></li>
               <li><a href="">Events</a></li>
@@ -72,7 +97,7 @@
       <div class="setman" id="set-id">
         <div class="setman-text">
           <div class="setman-typer">
-            <p class="typer">
+            <p class="typo">
               We
               <span
                 class="typer"
@@ -143,7 +168,7 @@
             background-size: auto 100%;
           "
         ></div>
-        <h3>Pelumi Adedoyin</h3>
+        <h3>Nnamdi Kingsley</h3>
         <p>
           "I feel so at home here."
         </p>
@@ -188,31 +213,37 @@
             <li class="footer-cols-head"><strong>MEDIA STORE</strong></li>
             <li><a href="#">Messages</a></li>
             <li><a href="#">Series</a></li>
-            <i class="ion-"></i>
           </ul>
           <!-- media store end -->
           <!-- contact us -->
 
-          <ul>
+          <ul class="contacto">
             <li class="footer-cols-head"><strong>CONTACT US</strong></li>
-            <li><i class="ion-android-call"></i> 07038376562</li>
+            <li>
+              <a href="tel:+234-7038376562"
+                ><i class="ion-android-call"></i> 07038376562</a
+              >
+            </li>
             <br />
             <li>
-              <i src="/img/icons/mail.svg"></i>
-              hotrilorin@gmail.com
+              <a href="mailto:hotrilorin@gmail.com"
+                ><i class="ion-android-mail"></i> hotrilorin@gmail.com</a
+              >
             </li>
             <br />
 
-            <li><i class="ion-android-home"></i> 2, James Oni Road, Agric</li>
-            <li>Old Jebba Road, Ilorin</li>
-            <li>Kwara State</li>
+            <li>
+              <a
+                class="popup-gmaps gmap"
+                href="https://maps.google.com/maps?q=2+James+Oni+Road,+Off+Old+Jebba+Road,+Agric+Ilorin&amp;hl=en&amp;t=v&amp;"
+                ><i class="ion-android-home"></i> 2, James Oni Road, Agric
+                <br />Old Jebba Road, Ilorin<br />Kwara State<br />
 
-            <a
-              class="popup-gmaps gmap"
-              href="https://maps.google.com/maps?q=2+James+Oni+Road,+Off+Old+Jebba+Road,+Agric+Ilorin&amp;hl=en&amp;t=v&amp;"
-              ><i class="ion-ios-location"></i> Open Google Map</a
-            >
+                <i class="ion-ios-location"></i> Open Google Map</a
+              >
+            </li>
           </ul>
+
           <!-- contact us end -->
           <!-- service times -->
           <ul>
@@ -267,7 +298,8 @@
         <div class="footer-copy">
           <div class="footer-copy-copy">
             Copyright &copy;2020. House On The Rock, Ilorin. All rights
-            reserved.
+            reserved.<br /><br />
+            Dev'd by <a href="abskn-sols.netlify.app">abskn solutions</a>
           </div>
           <div class="logo-copy"></div>
         </div>

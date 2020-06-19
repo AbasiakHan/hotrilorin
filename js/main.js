@@ -19,13 +19,13 @@ $(document).ready(function () {
   // mfp end
 
   // open modal
-  $('.popup-modal').magnificPopup({
-    type: 'inline',
+  $(".popup-modal").magnificPopup({
+    type: "inline",
     preloader: false,
-    focus: '#username',
-    modal: true
+    focus: "#username",
+    modal: true,
   });
-  $(document).on('click', '.popup-modal-dismiss', function (e) {
+  $(document).on("click", ".popup-modal-dismiss", function (e) {
     e.preventDefault();
     $.magnificPopup.close();
   });
@@ -44,11 +44,13 @@ $(document).ready(function () {
     }
   });
 
-  $(".tooltip").tooltipster();
+  $(".tooltip").tooltipster({
+    theme: "tooltipster-shadow",
+  });
 
   /* MOBILE NAVIGATION */
   $(".js--nav-icon").click(function () {
-    var nav = $(".js--main-nav-wrapper");
+    var nav = $(".js--main-nav");
     var icon = $(".js--nav-icon i");
 
     nav.slideToggle(200);

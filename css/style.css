@@ -116,6 +116,10 @@ ul {
 }
 
 /* MOBILE NAVI ICON */
+.mobile-row {
+  display: none;
+}
+
 .mobile-nav-icon {
   float: right;
   margin-top: 30px;
@@ -145,6 +149,9 @@ ul {
   color: #000;
   font-weight: 400;
   border-bottom: 2px solid transparent;
+}
+.sticky .mobile-nav-icon i {
+  color: #555;
 }
 
 .sticky .main-nav li a:hover,
@@ -219,13 +226,17 @@ ul {
   overflow: auto;
 }
 
+.tooltip {
+  font-style: 10px;
+}
+
 .setman-typer {
   clear: left;
   padding-left: 5em;
 }
 
-p.typer{
-  font-size: 18px;
+p.typer {
+  font-size: 20px;
 }
 
 .setman-typer > h3 {
@@ -510,23 +521,17 @@ main .direct-button {
   color: #000000;
 }
 
-/* .social-icons .ig:hover {
-  color: #e4405f;
-  transition-duration: 0.8s;
-}
-
-.social-icons .wa:hover {
-  color: #25d366;
-  transition-duration: 0.8s;
-} */
-
 .store a,
-.gmap {
+.gmap,
+.contacto a,
+.footer-copy-copy a {
   color: var(--other-color);
 }
 
 .store a:hover,
-.gmap:hover {
+.gmap:hover,
+.contacto a:hover,
+.footer-copy-copy a:hover {
   color: #b2b2b2;
   font-size: 90%;
   padding: 2px 6px 2px 6px;
