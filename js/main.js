@@ -74,7 +74,7 @@ const section = document.querySelector("section");
 const topOfSection = section.offsetTop;
 const nav = document.querySelector("js--main-nav");
 const navIcon = document.querySelector(".js--nav-icon i");
-var navRound = document.querySelector('.ion-navicon-round')
+var navRound = document.querySelector(".ion-navicon-round");
 
 function addSticky() {
   if (window.scrollY >= topOfSection) {
@@ -88,4 +88,3 @@ function addSticky() {
 
 window.addEventListener("scroll", addSticky);
 //
-
