@@ -230,7 +230,6 @@ marquee p span {
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 15px;
-
 }
 
 /* SETMAN */
@@ -511,7 +510,7 @@ main .direct-button {
 .social-icons li {
   display: inline-block;
   margin-right: 25px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .social-icons li a i {
@@ -520,8 +519,6 @@ main .direct-button {
 
 .social-icons li a i:hover {
   display: inline-block;
-  /* margin-right: 10px; */
-  /* font-size: 1.5rem; */
   color: rgb(214, 216, 120);
   transition-delay: 0.3s;
   transition: ease-in-out 0.5s;
@@ -533,6 +530,23 @@ main .direct-button {
 
 .social-icons .mobile-wa {
   display: none;
+}
+
+.social-icons li a {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  padding: 20px;
+}
+
+.social-icons li a:hover{
+  background-color: #636363;
+  transition-delay: .5s;
+  transition-duration: 1s;
 }
 
 .footer-cols .social-icons a:link,
