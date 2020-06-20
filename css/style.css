@@ -269,6 +269,7 @@ marquee p span {
 
 p.typo {
   font-size: 20px;
+  font-weight: 400;
   font-family: var(--courier);
 }
 
@@ -285,6 +286,7 @@ p.typo {
 
 .setman-main {
   font-weight: 300;
+  font-family: var(--lato);
   float: left;
   margin: 0;
   padding-left: 7em;
@@ -312,24 +314,25 @@ p.typo {
   width: 100%;
 }
 
-.setman-text {
-  padding: 10px;
-}
-
-.setman-footer p {
+.setman-main p span {
+  display: inline-block;
+  margin-left: 50px;
+  white-space: nowrap;
   font-family: var(--lato);
   font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(121, 121, 240);
 }
 
 .headshot > img {
-  max-width: 30%;
+  max-width: 150px;
+  padding-left: 50px;
 }
 
 .headshot {
   margin: 0;
-  max-width: 40%;
-  min-width: 20%;
-  padding-top: 40px;
+  max-width: 100%;
+  padding-top: 30px;
 }
 
 /* REVIEWS */
@@ -355,8 +358,8 @@ p.typo {
 }
 
 .review .picture {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   float: left;
   border-radius: 50px;
   border: 1px solid rgb(49, 49, 52);
@@ -365,11 +368,13 @@ p.typo {
 
 .review h3 {
   font-family: var(--montserrat);
+  font-size: 15px;
 }
 
 .review > p {
   font-family: var(--lato);
   font-style: oblique;
+  font-size: 15px;
 }
 
 .shadow {
@@ -428,12 +433,9 @@ main .please {
   font-weight: 400;
   display: inline-block;
   width: 250px;
-  /* text-align: right; */
-  /* margin-right: 30px; */
-  /* vertical-align: middle; */
-  /* text-transform: uppercase; */
   letter-spacing: 2px;
   font-size: 1.2em;
+  font-family: var(--lato);
 }
 
 main .direct-button {

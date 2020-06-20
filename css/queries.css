@@ -10,6 +10,14 @@
     padding: 1em;
   }
 
+  .setman-main {
+    width: 600px;
+  }
+
+  .setman-main p {
+    margin-top: 0px;
+  }
+
   .hero {
     position: relative;
     margin: -80vh 0 0 0;
@@ -25,6 +33,53 @@
     display: inline-block;
     margin-right: 15px;
     font-size: 1.1rem;
+  }
+
+  .headshot > img {
+    max-width: 150px;
+    padding: 0;
+  }
+
+  .headshot {
+    display: grid;
+    justify-items: center;
+    height: 50%;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 974px) {
+  .setman-main {
+    width: 600px;
+  }
+
+  .headshot > img {
+    max-width: 150px;
+    padding: 0;
+  }
+
+  .headshot {
+    display: grid;
+    margin: 0;
+    justify-items: center;
+    min-width: 20%;
+    width: 150px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 871px) {
+  .headshot {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    min-width: 20%;
+    /* height: 50%; */
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 }
 
@@ -150,7 +205,7 @@
   }
 
   .setman-typer {
-    text-align: center;
+    /* text-align: center; */
     clear: left;
     padding: 0;
     margin: 0;
@@ -161,47 +216,39 @@
   }
 
   .setman-main {
-    float: left;
     margin: 0;
     padding-left: 0em;
     line-height: 1.5;
-    font-style: normal;
     font-size: 17px;
     width: 100%;
+  }
+
+  .setman-main p {
+    margin-top: 0px;
   }
 
   .fabric {
     display: none;
   }
 
-  .setman-footer {
-    font-weight: 400;
-    color: blue;
-    font-size: 15px;
-    text-transform: uppercase;
-    justify-content: flex-end;
-    display: flex;
-    clear: left;
-    /* float: right; */
-    /* padding-left: 100px; */
-  }
-
   .setman-footer p {
-    float: left;
+    /* float: left; */
   }
 
   .headshot > img {
-    max-width: 30%;
+    max-width: 150px;
+    padding: 0;
   }
 
   .headshot {
-    margin: 0;
-    /* max-width: 30%; */
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
     min-width: 20%;
-    height: 50%;
-    padding-left: 10px;
-    padding-top: 0;
-    float: left;
+    /* height: 50%; */
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 
   /*	FOOTER */
