@@ -1,10 +1,19 @@
 :root {
+  /* COLORS */
   --primary-color: #fff;
   --secondary-color: #121912;
   --footer-color: #333333;
   --directions-color: #85bf3b;
   --setman-color: #ffff66;
   --other-color: #aaaaaa;
+
+  /* FONTS-FAMILIES */
+  --courier: "Courier Prime", monospace;
+  --lato: "Lato", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --openSans: "Open Sans", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --robotoCondensed: "Roboto Condensed", sans-serif;
 }
 
 * {
@@ -20,7 +29,6 @@ a {
 html {
   background-color: #fff;
   color: #171616;
-  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
@@ -101,6 +109,9 @@ header {
   color: #fff;
   text-transform: uppercase;
   font-size: 90%;
+  font-family: var(--lato);
+  font-weight: 400;
+  letter-spacing: 2px;
   border-bottom: 2px solid transparent;
   transition: border-bottom 500ms;
 }
@@ -141,7 +152,7 @@ ul {
   width: 100%;
   background: rgb(238, 238, 238);
   box-shadow: 0 1px 5px #3f543c;
-  transition: background 0.5s;
+  transition: background 0.5s ease-in-out;
 }
 
 .sticky .main-nav li a:link,
@@ -222,6 +233,8 @@ marquee {
 
 marquee p {
   font-size: 15px;
+  font-family: var(--robotoCondensed);
+  font-weight: 300;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
@@ -254,8 +267,9 @@ marquee p span {
   padding-left: 5em;
 }
 
-p.typer {
+p.typo {
   font-size: 20px;
+  font-family: var(--courier);
 }
 
 .setman-typer > h3 {
@@ -302,6 +316,11 @@ p.typer {
   padding: 10px;
 }
 
+.setman-footer p {
+  font-family: var(--lato);
+  font-weight: 900;
+}
+
 .headshot > img {
   max-width: 30%;
 }
@@ -316,7 +335,6 @@ p.typer {
 /* REVIEWS */
 .reviews {
   position: relative;
-  font-size: 0;
   padding: 20px;
   background-color: rgb(243, 242, 242);
   text-align: center;
@@ -345,6 +363,15 @@ p.typer {
   margin-right: 10px;
 }
 
+.review h3 {
+  font-family: var(--montserrat);
+}
+
+.review > p {
+  font-family: var(--lato);
+  font-style: oblique;
+}
+
 .shadow {
   box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 7px 0px;
 }
@@ -353,10 +380,6 @@ p.typer {
   color: rgb(60, 60, 60);
   margin-top: 0;
   font-size: initial;
-}
-
-.review > p {
-  font-style: oblique;
 }
 
 h3 {
@@ -382,9 +405,9 @@ p {
   margin-inline-end: 0px;
 }
 
-p {
+/* p {
   font-family: "Source Sans Pro", sans-serif;
-}
+} */
 
 /* DIRECTIONS */
 main {
@@ -422,6 +445,7 @@ main .direct-button {
 
 .direct-button span {
   letter-spacing: 1px;
+  font-family: var(--lato);
   font-weight: 400;
   border: 1px solid #fff;
   border-radius: 50px;
@@ -473,12 +497,14 @@ main .direct-button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
-  font-size: 0.75rem;
-  font-weight: 400;
+  font-family: var(--montserrat);
+  font-size: 0.7rem;
+  font-weight: 300;
 }
 
 .footer-cols-head {
   color: rgb(243, 243, 243);
+  font-family: var(--montserrat);
 }
 
 .footer-cols li {
@@ -492,9 +518,16 @@ main .direct-button {
 }
 
 .footer-copy-copy {
-  font-size: 0.7em;
+  font-size: 0.75em;
+  font-family: var(--openSans);
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+.footer-copy-copy a {
+  /* FIXME: */
+  font-size: 0.9em;
+  font-weight: 600;
 }
 
 .footer-copy .logo-copy {
@@ -543,9 +576,9 @@ main .direct-button {
   padding: 20px;
 }
 
-.social-icons li a:hover{
+.social-icons li a:hover {
   background-color: #636363;
-  transition-delay: .5s;
+  transition-delay: 0.5s;
   transition-duration: 1s;
 }
 
