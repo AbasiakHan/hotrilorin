@@ -36,17 +36,20 @@ $(document).ready(function () {
   });
 
   // Sticky
-  $(".js--setman-container").waypoint(function (direction) {
+  /*$(".js--setman-container").waypoint(function (direction) {
     if (direction == "down") {
       $("nav").addClass("sticky");
     } else {
       $("nav").removeClass("sticky");
     }
-  });
+  });*/
+  // Sticky navigation end
 
+  // tooltipster
   $(".tooltip").tooltipster({
     theme: "tooltipster-shadow",
   });
+  // tooltipster end
 
   /* MOBILE NAVIGATION */
   $(".js--nav-icon").click(function () {
@@ -63,4 +66,26 @@ $(document).ready(function () {
       icon.removeClass("ion-close-round");
     }
   });
+  // mobile navigation end
 });
+
+//
+const section = document.querySelector("section");
+const topOfSection = section.offsetTop;
+const nav = document.querySelector("js--main-nav");
+const navIcon = document.querySelector(".js--nav-icon i");
+var navRound = document.querySelector('.ion-navicon-round')
+
+function addSticky() {
+  if (window.scrollY >= topOfSection) {
+    document.querySelector(".js--main-nav").style.position = "relative";
+    document.querySelector("nav").classList.add("sticky");
+  } else {
+    document.querySelector(".js--main-nav").style.position = "absolute";
+    document.querySelector("nav").classList.remove("sticky");
+  }
+}
+
+window.addEventListener("scroll", addSticky);
+//
+
