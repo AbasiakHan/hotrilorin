@@ -64,7 +64,7 @@ header {
 /* NAVIGATION */
 .logo-white {
   display: block;
-  background: url("/img/homeforall_white-min.png");
+  background: url("/img/homeforall_white.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 40px;
@@ -73,7 +73,7 @@ header {
 }
 
 .logo-black {
-  background: url("/img/homeforall_black-min.png");
+  background: url("/img/homeforall_black.png");
   background-repeat: no-repeat;
   background-size: contain;
   display: none;
@@ -535,11 +535,11 @@ main .direct-button {
 .footer-copy .logo-copy {
   display: block;
   /* width: 64px; */
-  background: url(/img/homeforall_black-min.png);
+  background: url('/img/homeforall_black.png');
   background-repeat: no-repeat;
   background-size: contain;
   height: 30px;
-  justify-items: right;
+  float: right;
 }
 
 .social-icons li {
