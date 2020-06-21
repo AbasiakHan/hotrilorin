@@ -142,11 +142,25 @@
   }
 
   .marquee div {
-    display: block;
-    margin: 0;
-    width: 400%;
-    position: relative;
-    animation: marquee 10s linear infinite;
+    width: 200%;
+    animation: marquee 20s linear infinite;
+  }
+
+  .marquee div {
+    width: 200%;
+  }
+
+  .marquee div p {
+    width: 200%;
+  }
+
+  @keyframes marquee {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -400%;
+    }
   }
 
   a {
