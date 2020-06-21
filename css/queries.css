@@ -141,6 +141,14 @@
     list-style: none;
   }
 
+  .marquee div {
+    display: block;
+    margin: 0;
+    width: 250%;
+    position: relative;
+    animation: marquee 20s linear infinite;
+  }
+
   a {
     text-decoration: none;
   }
@@ -229,10 +237,6 @@
 
   .fabric {
     display: none;
-  }
-
-  .setman-footer p {
-    /* float: left; */
   }
 
   .headshot > img {
