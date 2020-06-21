@@ -239,7 +239,7 @@ ul {
 .marquee div {
   display: block;
   margin: 0;
-  width: 250%;
+  width: 100%;
   position: relative;
 
   animation: marquee 30s linear infinite;

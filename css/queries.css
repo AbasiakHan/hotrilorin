@@ -144,9 +144,9 @@
   .marquee div {
     display: block;
     margin: 0;
-    width: 250%;
+    width: 400%;
     position: relative;
-    animation: marquee 20s linear infinite;
+    animation: marquee 10s linear infinite;
   }
 
   a {
