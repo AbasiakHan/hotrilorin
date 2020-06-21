@@ -364,7 +364,8 @@ p.typo {
 .reviews {
   position: relative;
   padding: 20px;
-  background-color: rgb(243, 242, 242);
+  background: url(/img/texture.png);
+  background-position-x: center;
   text-align: center;
   border: 1px solid rgb(230, 230, 230);
   border-width: 1px 0 1px 0;
